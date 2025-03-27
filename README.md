@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [Github pages](https://www.ckharrison.github.io/social-link-profile)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/social-links-profile-fTZ7vwv7_j)
+- Live Site URL: [Github pages](https://ckharrison.github.io/social-links-profile/)
 
 ## My process
 
