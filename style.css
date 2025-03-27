@@ -1,0 +1,168 @@
+/* Typography */
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format(truetype);
+  font-weight: 400 700;
+}
+
+:root {
+  box-sizing: border-box;
+  --background-color-primary: hsl(0, 0%, 8%);
+  --color-grey-900: hsl(0, 0%, 8%);
+  --color-grey-800: hsl(0, 0%, 12%);
+  --color-grey-750: hsl(0, 0%, 20%);
+  --color-green: hsl(75, 95%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --font-family: "Inter", sans-serif;
+  --font-weight-bold: 700;
+  --font-weight-regular-bold: 600;
+  --font-weight-regular: 500;
+  --font-size-large: 1.5rem;
+  --font-size-small: 0.875rem;
+  --font-size-extra-small: 0.5rem;
+  --default-line-height: 150%;
+  --spacing-500: 2.5rem;
+  --spacing-300: 1.5rem;
+  --spacing-200: 1rem;
+  --spacing-150: 0.75rem;
+  --spacing-100: 0.6rem;
+  --spacing-50: 0.25rem;
+
+  --text-preset-1: var(--font-weight-bold) var(--font-size-large) / var(--default-line-height) var(--font-family);
+  --text-preset-2: var(--font-weight-regular) var(--font-size-small) / var(--default-line-height) var(--font-family);
+  --text-preset-2-bold: var(--font-weight-regular-bold) var(--font-size-small) / var(--default-line-height)
+    var(--font-family);
+  --text-preset-3: var(--font-weight-regular) var(--font-size-extra-small) / var(--default-line-height)
+    var(--font-family);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--background-color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+  padding: var(--spacing-300);
+}
+
+h1,
+p,
+button {
+  margin: 0;
+  letter-spacing: 0px;
+}
+
+.main {
+  max-width: 330px;
+}
+
+/* Layout */
+.profile-container {
+  background-color: var(--color-grey-800);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-300);
+  padding: var(--spacing-300);
+  text-align: center;
+  width: 100%;
+}
+
+.profile-author-image {
+  border-radius: 50%;
+  width: 90px;
+}
+
+.profile-author-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-300);
+}
+
+.profile-author-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-50);
+}
+
+.profile-author-title {
+  color: var(--color-white);
+  font: var(--text-preset-1);
+}
+
+.profile-author-location {
+  color: var(--color-green);
+  font: var(--text-preset-2-bold);
+}
+
+.profile-author-blurb {
+  color: var(--color-white);
+  font: var(--text-preset-2);
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-200);
+}
+
+.link {
+  background-color: var(--color-grey-750);
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--color-white);
+  font: var(--text-preset-2-bold);
+  padding: 0.75em 1.5em;
+  width: 100%;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.link:visited {
+  color: var(--color-white);
+}
+
+.link:hover,
+.link:hover:visited,
+.link:active,
+.link:focus {
+  background-color: var(--color-green);
+  color: var(--color-grey-750);
+}
+
+.footer {
+  text-align: center;
+  color: var(--color-white);
+  font: var(--text-preset-3);
+}
+
+.footer-link {
+  color: var(--color-green);
+  text-decoration: none;
+}
+
+.footer-link:visited {
+  color: var(--color-green);
+}
+
+@media (min-width: 600px) {
+  .main {
+    width: 380px;
+  }
+}
